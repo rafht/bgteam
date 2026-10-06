@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>///BG | Brotherhood Garage</title>
-<meta name="description" content="///BG Brotherhood Garage - tuning shop in Armenia.">
+<meta name="description" content="BMW tuning &amp; service center: coding, programming, chip tuning, DME unlock, Stage 1/2/3+.">
 <meta name="theme-color" content="#0a0a0b">
 
 <!-- Favicon -->
@@ -85,8 +85,22 @@
     animation: grow 1s calc(var(--t) + .8s) cubic-bezier(.2,.8,.2,1) both;
   }
 
+  /* ---------- services ---------- */
+  .services { list-style: none; margin-top: 34px; display: flex; flex-direction: column; gap: 12px; }
+  .services li {
+    font-size: clamp(.95rem, 2.6vw, 1.15rem); letter-spacing: .06em; color: #d6d6da;
+    animation: rise .8s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .services li:first-child { font-weight: 700; color: #fff; font-size: clamp(1.05rem, 3vw, 1.3rem); }
+  .services .ic { display: inline-block; width: 1.9em; }
+  .services li:nth-child(1) { animation-delay: calc(var(--t) + 1.0s); }
+  .services li:nth-child(2) { animation-delay: calc(var(--t) + 1.12s); }
+  .services li:nth-child(3) { animation-delay: calc(var(--t) + 1.24s); }
+  .services li:nth-child(4) { animation-delay: calc(var(--t) + 1.36s); }
+  .services li:nth-child(5) { animation-delay: calc(var(--t) + 1.48s); }
+
   /* ---------- social icons ---------- */
-  .social { display: flex; justify-content: center; gap: 18px; margin-top: 38px; }
+  .social { display: flex; justify-content: center; gap: 18px; margin-top: 34px; }
   .social a {
     width: 54px; height: 54px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
@@ -96,9 +110,9 @@
     transition: transform .25s, color .25s, border-color .25s, box-shadow .25s;
     animation: rise .8s cubic-bezier(.2,.8,.2,1) both;
   }
-  .social a:nth-child(1) { animation-delay: calc(var(--t) + 1.2s); }
-  .social a:nth-child(2) { animation-delay: calc(var(--t) + 1.35s); }
-  .social a:nth-child(3) { animation-delay: calc(var(--t) + 1.5s); }
+  .social a:nth-child(1) { animation-delay: calc(var(--t) + 1.8s); }
+  .social a:nth-child(2) { animation-delay: calc(var(--t) + 1.95s); }
+  .social a:nth-child(3) { animation-delay: calc(var(--t) + 2.1s); }
   .social a:hover, .social a:focus-visible {
     transform: translateY(-4px);
     color: var(--m-light); border-color: var(--m-light);
@@ -111,7 +125,7 @@
   .down {
     position: absolute; bottom: 28px; left: 50%; margin-left: -14px;
     width: 28px; height: 28px; color: rgba(255,255,255,.55);
-    animation: rise .8s calc(var(--t) + 1.8s) both, bob 2s ease-in-out calc(var(--t) + 2.6s) infinite;
+    animation: rise .8s calc(var(--t) + 2.4s) both, bob 2s ease-in-out calc(var(--t) + 3.2s) infinite;
   }
   .down svg { width: 100%; height: 100%; }
 
@@ -184,6 +198,14 @@
       <span>Brotherhood Garage</span>
     </h1>
     <div class="line"></div>
+
+    <ul class="services">
+      <li><span class="ic">⚙️</span>BMW Tuning &amp; Service Center</li>
+      <li><span class="ic">💻</span>Coding, Programming, Chip Tuning</li>
+      <li><span class="ic">🔓</span>2020+ DME UNLOCK</li>
+      <li><span class="ic">📈</span>Euro 0/2, Stage 1/2/3+, Pops &amp; Bangs</li>
+      <li><span class="ic">🏁</span>Dealer xHP / xDelete / MHD / BM3</li>
+    </ul>
 
     <nav class="social" aria-label="Social media">
       <a href="https://www.instagram.com/diagnostika.am" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
