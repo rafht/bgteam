@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>///BG | Brotherhood Garage</title>
+<style>
+  :root {
+    --m-light: #81C4FF;
+    --m-dark: #0066B1;
+    --m-red: #E7222E;
+    --bg: #0a0a0b;
+    --text: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+  }
+  .top-stripes {
+    position: fixed; top: 0; left: 0; right: 0; height: 8px;
+    display: flex;
+  }
+  .top-stripes span { flex: 1; }
+  .top-stripes span:nth-child(1) { background: var(--m-light); }
+  .top-stripes span:nth-child(2) { background: var(--m-dark); }
+  .top-stripes span:nth-child(3) { background: var(--m-red); }
+  .small {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--m-light);
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 4rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    font-style: italic;
+  }
+  .slashes { font-style: italic; }
+  .slashes i { font-style: italic; }
+  .s1 { color: var(--m-light); }
+  .s2 { color: var(--m-dark); }
+  .s3 { color: var(--m-red); }
+  .sep { color: var(--m-dark); margin: 0 0.2em; }
+</style>
+</head>
+<body>
+  <div class="top-stripes"><span></span><span></span><span></span></div>
+  <main>
+    <p class="small">Grig.</p>
+    <h1>
+      <span class="slashes"><i class="s1">/</i><i class="s2">/</i><i class="s3">/</i></span>BG
+      <span class="sep">|</span>
+      Brotherhood Garage
+    </h1>
+  </main>
+</body>
+</html>
