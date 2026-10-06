@@ -4,13 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>///BG | Brotherhood Garage</title>
+<meta name="description" content="///BG Brotherhood Garage - tuning shop in Armenia.">
+<meta name="theme-color" content="#0a0a0b">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Preview card (Telegram, WhatsApp, Instagram, Facebook, X) -->
+<!-- Replace YOUR-SITE.pages.dev with your real domain -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="///BG | Brotherhood Garage">
+<meta property="og:description" content="Tuning shop in Armenia.">
+<meta property="og:url" content="https://bgteam.am/">
+<meta property="og:image" content="https://bgteam.am/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="///BG | Brotherhood Garage">
+<meta name="twitter:description" content="Tuning shop in Armenia.">
+<meta name="twitter:image" content="https://bgteam.am/og-image.png">
+
 <style>
   :root {
     --m-light: #81C4FF;
     --m-dark: #0066B1;
     --m-red: #E7222E;
+    --am-red: #D90012;    /* Armenian flag */
+    --am-blue: #0033A0;
+    --am-orange: #F2A800;
     --bg: #0a0a0b;
     --text: #ffffff;
+    --t: .9s; /* when the title starts (after the stripe wipe) */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
@@ -23,44 +49,74 @@
     justify-content: center;
     text-align: center;
     padding: 24px;
+    overflow: hidden;
   }
-  .top-stripes {
-    position: fixed; top: 0; left: 0; right: 0; height: 8px;
-    display: flex;
-  }
-  .top-stripes span { flex: 1; }
+
+  /* ---------- page ---------- */
+  .top-stripes { position: fixed; top: 0; left: 0; right: 0; height: 8px; display: flex; }
+  .top-stripes span { flex: 1; animation: shine 3s ease-in-out infinite; }
   .top-stripes span:nth-child(1) { background: var(--m-light); }
-  .top-stripes span:nth-child(2) { background: var(--m-dark); }
-  .top-stripes span:nth-child(3) { background: var(--m-red); }
-  .small {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--m-light);
-    margin-bottom: 16px;
-  }
+  .top-stripes span:nth-child(2) { background: var(--m-dark); animation-delay: .3s; }
+  .top-stripes span:nth-child(3) { background: var(--m-red);  animation-delay: .6s; }
+
   h1 {
     font-size: clamp(1.8rem, 6vw, 4rem);
     font-weight: 800;
     letter-spacing: 0.04em;
     font-style: italic;
+    line-height: 1.25;
+    animation: rise 1s cubic-bezier(.2,.8,.2,1) var(--t) both;
   }
-  .slashes { font-style: regular; }
-  .slashes i { font-style: italic; }
-  .s1 { color: var(--m-light); }
-  .s2 { color: var(--m-dark); }
-  .s3 { color: var(--m-red); }
-  .sep { color: var(--m-dark); margin: 0 0.2em; }
+  h1 span { display: block; }
+  h1 i { display: inline-block; font-style: italic; animation: slashIn .6s ease-out both, pulse 2.4s ease-in-out infinite; }
+  .s1 { color: var(--m-light); animation-delay: calc(var(--t) + .3s),  calc(var(--t) + 1.6s); }
+  .s2 { color: var(--m-dark);  animation-delay: calc(var(--t) + .45s), calc(var(--t) + 1.9s); }
+  .s3 { color: var(--m-red);   animation-delay: calc(var(--t) + .6s),  calc(var(--t) + 2.2s); }
+
+  /* bottom stripe: Armenian flag colors */
+  .line {
+    width: 120px; height: 4px; margin: 26px auto 0;
+    background: linear-gradient(90deg, var(--am-red) 33.33%, var(--am-blue) 33.33% 66.66%, var(--am-orange) 66.66%);
+    transform: skewX(-20deg);
+    animation: grow 1s calc(var(--t) + .8s) cubic-bezier(.2,.8,.2,1) both;
+  }
+
+  /* ---------- intro: M-stripe wipe ---------- */
+  .wipe span {
+    position: fixed; top: -10%; bottom: -10%; left: 0; width: 16vw; z-index: 11;
+    transform: translateX(-60vw) skewX(-20deg);
+    animation: sweep .8s cubic-bezier(.6,0,.3,1) forwards;
+    pointer-events: none;
+  }
+  .wipe span:nth-child(1) { background: var(--m-light); animation-delay: .20s; }
+  .wipe span:nth-child(2) { background: var(--m-dark);  animation-delay: .28s; }
+  .wipe span:nth-child(3) { background: var(--m-red);   animation-delay: .36s; }
+
+  /* ---------- keyframes ---------- */
+  @keyframes sweep { from { transform: translateX(-60vw) skewX(-20deg); } to { transform: translateX(180vw) skewX(-20deg); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes slashIn { from { opacity: 0; transform: translateX(-24px) skewX(-20deg); } to { opacity: 1; transform: none; } }
+  @keyframes pulse { 0%,100% { filter: brightness(1); } 50% { filter: brightness(1.6) drop-shadow(0 0 8px currentColor); } }
+  @keyframes grow { from { width: 0; opacity: 0; } to { width: 120px; opacity: 1; } }
+  @keyframes shine { 0%,100% { filter: brightness(.8); } 50% { filter: brightness(1.5); } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wipe { display: none; }
+    *, *::before { animation: none !important; }
+  }
 </style>
 </head>
 <body>
+  <!-- Intro: M-stripe wipe -->
+  <div class="wipe" aria-hidden="true"><span></span><span></span><span></span></div>
+
   <div class="top-stripes"><span></span><span></span><span></span></div>
   <main>
     <h1>
-      <span class="slashes"><i class="s1">/</i><i class="s2">/</i><i class="s3">/</i></span>BG
-      <span class="sep">|</span>
-      Brotherhood Garage
+      <span><i class="s1">/</i><i class="s2">/</i><i class="s3">/</i>BG</span>
+      <span>Brotherhood Garage</span>
     </h1>
+    <div class="line"></div>
   </main>
 </body>
 </html>
